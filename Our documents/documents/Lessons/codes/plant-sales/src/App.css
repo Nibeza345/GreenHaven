@@ -1,0 +1,199 @@
+/* Base (mobile-first) styles */
+.header {
+    padding-top: 12px;
+    background: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.content {
+    margin: 4px 2px;
+    padding: 8px;
+}
+
+.triger-btn {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Sider */
+.sider {
+    height: 100vh;
+    position: sticky !important;
+    left: 0;
+    bottom: 0;  
+    top: 0;
+}
+
+.logo {
+    color: #4f6f52;
+    margin: 30px 0;
+    font-size: 1.2rem;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.ant-menu-item-selected {
+    background-color: #4f6f52 !important;
+    color: #fff !important;
+}
+
+/* header */
+.header-icon {
+    background: #d2e3c8;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #4f6f52;
+    cursor: pointer;
+}
+
+/* button and color */
+.ant-btn:hover {
+    color: #4f6f52 !important;
+    border-color: #4f6f52 !important;
+}
+
+.ant-btn-primary {
+    background-color: #4f6f52 !important;
+}
+
+.ant-btn-primary:hover {
+    background-color: #173a1a !important;
+    color: #fff !important;
+}
+
+.primary--color {
+    color: #4f6f52 !important;
+}
+
+.primary--light--color {
+    color: #739072 !important;
+}
+
+.secondary--color {
+    color: #86a789 !important;
+}
+
+.light--color {
+    color: #d2e3c8 !important;
+}
+
+.gray--color {
+    color: rgb(182, 181, 181) !important;
+}
+
+/* plant lists */
+.plant-card {
+    flex: 1;
+    height: 120px;
+    text-align: center;
+}
+
+/* seller list */
+.top-seller, .featured-seller {
+    flex: 1;
+}
+
+.divider {
+    border: 2px solid green;
+    height: 50px;
+}
+
+.card {
+    background-image: linear-gradient(to bottom, #4c7f79, #87e8de);
+}
+
+/* Media queries for larger screens */
+
+/* Tablets (>= 576px) */
+@media (min-width: 576px) {
+    .header {
+        padding-top: 8px;
+    }
+
+    .content {
+        margin: 8px 4px;
+        padding: 10px;
+    }
+
+    .plant-card {
+        height: 150px;
+    }
+
+    .triger-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu-bar {
+        gap: 5px;
+    }
+}
+
+/* Medium-sized devices (>= 768px) */
+@media (min-width: 768px) {
+    .header {
+        padding-top: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .content {
+        margin: 16px 8px;
+        padding: 15px;
+    }
+
+    .plant-card {
+        height: 200px;
+    }
+
+    .triger-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        padding-top: 8px;
+    }
+
+    .content {
+        margin: 24px 16px;
+        padding: 20px;
+    }
+
+    .plant-card {
+        height: 250px;
+    }
+
+    .triger-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .menu-bar {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .header-icon {
+        font-size: 15px;
+        padding: 8px;
+    }
+}
